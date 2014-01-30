@@ -1,4 +1,4 @@
-class BlackHole
+class BlackHole < ::BasicObject
 
   class BlackHoleError < ::StandardError; end
 

@@ -1,15 +1,17 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'blackhole/version'
+# lib = File.expand_path('../lib', __FILE__)
+# $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+# get the blockhole version
+require './lib/blackhole/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "blackhole"
   spec.version       = Blackhole::VERSION
   spec.authors       = ["Maarten van Gijssel"]
   spec.email         = ["maarten@vgijssel.nl"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Creates a BlackHole object which can nest indefinite amount of properties.}
+  spec.summary       = %q{Gem for parameter like access to a hash.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
